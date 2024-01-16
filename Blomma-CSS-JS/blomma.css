@@ -1,0 +1,74 @@
+
+.blad {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  width: 10vw;
+  height: 10vw;
+  transform-origin: 0% 0%;
+}
+
+.blommbilder {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.blommText {
+  position: absolute;
+  margin: 0;
+  top: 45%;
+  left: 25%;
+  transform: rotate(50deg);
+  opacity: 0;
+  color: black;
+}
+
+#blommTextn1 {
+  transform: rotate(100deg);
+}
+
+#bladn1 {
+  transform: rotate(0deg);
+}
+
+#bladn2 {
+  transform: rotate(72deg);
+}
+
+#bladn3 {
+  transform: rotate(144deg);
+}
+
+#bladn4 {
+  transform: rotate(216deg);
+}
+
+#bladn5 {
+  transform: rotate(288deg);
+}
+
+
+#blommasmitt {
+  position: absolute;
+  width: 7vw;
+  height: 7vw;
+  left: calc(50% - 3.5vw);
+  top: calc(30% - 3.5vw);
+}
+
+#blommasmittimg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+}
+
+#flower {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
