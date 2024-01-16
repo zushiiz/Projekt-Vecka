@@ -12,7 +12,7 @@ nav{
   padding: 1em;
 }
 
-.logos{
+.logo-button-box{
   display: flex;
   justify-content: space-around;
   padding-top: 2em;
@@ -23,5 +23,21 @@ nav{
   background-color: white;
   height: 200px;
   width: 300px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.figure-div{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1em;
+  margin-right: 4em;
+}
+
+.logo-box:hover{
+  cursor: pointer;
+  scale: 1.1;
+  transition:0.2s ease-in-out;
+}
