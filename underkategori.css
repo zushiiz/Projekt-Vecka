@@ -5,39 +5,145 @@ body{
 }
 
 nav{
-  background-color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 1em;
 }
 
 .logo-button-box{
-  display: flex;
-  justify-content: space-around;
-  padding-top: 2em;
-
+  position:relative;
 }
 
 .logo-box{
   background-color: white;
-  height: 200px;
-  width: 300px;
-  border-radius: 10px;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 100000px;
+  border: solid black;
+}
+
+.logo{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.figure-div{
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 1em;
-  margin-right: 4em;
+#figure{
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .logo-box:hover{
   cursor: pointer;
   scale: 1.1;
   transition:0.2s ease-in-out;
+}
+
+#background {
+  position: absolute;
+  z-index: -10;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#treatment1{
+  position: absolute;
+  top: ;
+  left: ;
+}
+
+#treatment2{
+  position: absolute;
+  top: ;
+  left: ;
+}
+
+#law{
+  position: absolute;
+  top: ;
+  left: ;
+}
+
+#culture{
+  position: absolute;
+  top: ;
+  left: ;
+}
+
+#religion{
+  position: absolute;
+  top: 20em;
+  left: ;
+}
+
+#extras-logo{
+  margin-top: 0.5em;
+}
+
+#extras-logo2{
+  margin-top: 1em;
+}
+
+#fakenews{
+  position: absolute;
+  top: ;
+  left: ;
+}
+
+#censor{
+  position: absolute;
+  top: ;
+  left: ;
+}
+
+#politics{
+  position: absolute;
+  top:20rem;
+  left:;
+}
+
+#stateprotec{
+  position: absolute;
+  top: ;
+  left: ;
+}
+
+#economy{
+  position: absolute;
+  top: ;
+  left: ;
+}
+
+#education{
+  position: absolute;
+  top: ;
+  left: ;
+}
+
+#workcondition{
+  position: absolute;
+  top: ;
+  left: ;
+}
+
+#workcondition2{
+  position: absolute;
+  top: ;
+  left: ;
+}
+
+#slavery{
+  position: absolute;
+  top: 20em;
+  left: ;
+}
+
+#workrights{
+  position: absolute;
+  top: ;
+  left: ;
 }

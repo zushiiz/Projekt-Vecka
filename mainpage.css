@@ -1,13 +1,50 @@
+#background {
+  position: absolute;
+  z-index: -10;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#ManskligaRattighetertxt {
+  width: 35vw;
+}
+
+@media only screen and (max-width:1000px) {
+  #ManskligaRattighetertxt {
+    width: 55vw;
+  }
+  
+  .hidden {
+    visibility: hidden;
+  }
+
+}
+
+@media only screen and (max-width:600px) {
+  #ManskligaRattighetertxt {
+    width: 75vw;
+  }
+
+}
+
 .content{
   display: flex;
   justify-content: center;
   padding: 0;
   text-align: center;
-  margin-top: 2em;
+  padding-top: 2em;
 }
 
-body{
-  background-color: gray;
+#texts{
+  z-index: 10;
+}
+
+body {
+  background-color: #e8f5f9;
+  margin: 0;
+  padding: 0;
 }
 
 .intro-text{
@@ -37,25 +74,70 @@ body{
 }
 
 .cloud-div{
-  width:100%
+  width:100%;
+  position: relative;
+  z-index: 1;
 }
 
-@keyframes clouding {
+@keyframes clouding{
   from{
-    transform: translateX(0%);
+    transform: translateY(0%);
   }
 
   50%{
-    transform: translateX(300%);
+    transform: translateY(20%);
   }
 
   to{
-    transform: translateX(0%);
+    transform: translateY(0%);
   }
-
+  
 }
 
-.cloud{
-  animation: clouding 1000s infinite;
+#cloud1{
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 12rem;
+  animation: clouding 8s infinite;
+}
 
+#cloud2{
+  position: absolute;
+  top: 20rem;
+  left: 11rem;
+  width: 16rem;
+  animation: clouding 13s infinite;
+}
+
+#cloud3{
+  position: absolute;
+  top: 5%;
+  left: 24%;
+  width: 9rem;
+  animation: clouding 11s infinite;
+}
+
+#cloud4{
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  width: 11rem;
+  animation: clouding 7s infinite;
+}
+
+#cloud5{
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  width: 13rem;
+  animation: clouding 13s infinite;
+}
+
+#cloud6{
+  position: absolute;
+  top: 13%;
+  right: 5%;
+  width: 14rem;
+  animation: clouding 11s infinite;
 }
