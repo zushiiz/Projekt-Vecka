@@ -5,10 +5,11 @@
   max-height: 100%;
   min-width: 100%;
   min-height: 100%;
+  bottom: 0;
 }
 
 #ManskligaRattighetertxt {
-  width: 35vw;
+  width: 30vw;
 }
 
 @media only screen and (max-width:1000px) {
@@ -29,12 +30,31 @@
 
 }
 
+@font-face {
+  font-family: text-font-main;
+  src: url(assets/typo-grotesk-font/TypoGrotesk-rqop.ttf);
+}
+
+@font-face {
+  font-family: text-font;
+  src: url(assets/typo-grotesk-font/TypoGroteskBold-2Kxl.ttf);
+}
+
+h2{
+  font-family: text-font, sans-serif, 'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+
+
+
+
+
 .content{
   display: flex;
   justify-content: center;
   padding: 0;
   text-align: center;
-  padding-top: 2em;
+  padding-top: 2rem;
 }
 
 #texts{
@@ -42,9 +62,10 @@
 }
 
 body {
-  background-color: #e8f5f9;
+  background-color: #e6f3ff;
   margin: 0;
   padding: 0;
+  font-family: text-font-main, sans-serif, 'Times New Roman', Times, serif;
 }
 
 .intro-text{
@@ -56,27 +77,6 @@ body {
 
 .maintext{
   width: 50%;
-}
-
-.title{
-  font-size: 50px;
-  padding: 5px;
-}
-
-#oval {
-  width: 50%;
-  height: 15em;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-color: lightgray;
-}
-
-.cloud-div{
-  width:100%;
-  position: relative;
-  z-index: 1;
 }
 
 @keyframes clouding{
@@ -97,23 +97,23 @@ body {
 #cloud1{
   position: absolute;
   top: 10%;
-  left: 5%;
+  left: 8%;
   width: 12rem;
   animation: clouding 8s infinite;
 }
 
-#cloud2{
+#cloud2{  
   position: absolute;
-  top: 20rem;
-  left: 11rem;
-  width: 16rem;
+  top: 17%;
+  left: 18%;
+  width: 14rem;
   animation: clouding 13s infinite;
 }
 
 #cloud3{
   position: absolute;
   top: 5%;
-  left: 24%;
+  left: 29%;
   width: 9rem;
   animation: clouding 11s infinite;
 }
@@ -121,15 +121,15 @@ body {
 #cloud4{
   position: absolute;
   top: 20%;
-  right: 20%;
+  right: 27%;
   width: 11rem;
   animation: clouding 7s infinite;
 }
 
 #cloud5{
   position: absolute;
-  top: 50%;
-  right: 10%;
+  top: 5%;
+  right: 14%;
   width: 13rem;
   animation: clouding 13s infinite;
 }
@@ -140,4 +140,41 @@ body {
   right: 5%;
   width: 14rem;
   animation: clouding 11s infinite;
+}
+
+#cloud7{
+  position: absolute;
+  top: 4%;
+  right: 41%;
+  width: 16rem;
+  animation: clouding 11s infinite;
+}
+
+.hidden {
+  z-index: -8;
+}
+
+#ground {
+  position: absolute;
+  object-fit: cover;
+  width: 100vw;
+  bottom: 0;
+  z-index: -6;
+}
+
+#Pratbubbla {
+  position: absolute;
+  left: 14%;
+  top: 50%;
+  width: 22rem;
+  z-index: 10;
+}
+
+#blommtext {
+  position: absolute;
+  width: 14rem;
+  left: 17%;
+  top: 53%;
+  z-index: 20;
+  font-size: 17px;
 }

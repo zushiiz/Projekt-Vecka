@@ -47,7 +47,7 @@ let blommbilder2 = document.getElementsByClassName("blommbilder2");
 blommasmitt.addEventListener("mouseover", function(e) {  
   for (var i = 0; i < blommbilder1.length; i++) {
     blommbilder1[i].style.transition = "0.5s";
-    blommbilder1[i].style.opacity = 0;
+    blommbilder1[i].style.opacity = 1;
   }
 
   for (var i = 0; i < blommbilder2.length; i++) {
@@ -68,14 +68,14 @@ blommasmitt.addEventListener("mouseout", function(e) {
   }
 });
 
-bladn1.addEventListener("mouseover", function(e) { changeScaleAndOpacit2(bladn1, bladScale2, blommbildn1, 0, blommbildn1n2, 1, 3); });
-bladn2.addEventListener("mouseover", function(e) { changeScaleAndOpacit2(bladn2, bladScale2, blommbildn2, 0, blommbildn2n2, 1, 3); });
-bladn3.addEventListener("mouseover", function(e) { changeScaleAndOpacit2(bladn3, bladScale2, blommbildn3, 0, blommbildn3n2, 1, 3); });
-bladn4.addEventListener("mouseover", function(e) { changeScaleAndOpacit2(bladn4, bladScale2, blommbildn4, 0, blommbildn4n2, 1, 3); });
-bladn5.addEventListener("mouseover", function(e) { changeScaleAndOpacit2(bladn5, bladScale2, blommbildn5, 0, blommbildn5n2, 1, 3); });
+bladn1.addEventListener("mouseover", function(e) { changeScaleAndOpacit2(bladn1, bladScale2, blommbildn1, 1, blommbildn1n2, 1, 1); });
+bladn2.addEventListener("mouseover", function(e) { changeScaleAndOpacit2(bladn2, bladScale2, blommbildn2, 1, blommbildn2n2, 1, 2); });
+bladn3.addEventListener("mouseover", function(e) { changeScaleAndOpacit2(bladn3, bladScale2, blommbildn3, 1, blommbildn3n2, 1, 3); });
+bladn4.addEventListener("mouseover", function(e) { changeScaleAndOpacit2(bladn4, bladScale2, blommbildn4, 1, blommbildn4n2, 1, 3); });
+bladn5.addEventListener("mouseover", function(e) { changeScaleAndOpacit2(bladn5, bladScale2, blommbildn5, 1, blommbildn5n2, 1, 2); });
 
 bladn1.addEventListener("mouseout", function(e) { changeScaleAndOpacit2(bladn1, bladScale1, blommbildn1, 1, blommbildn1n2, 0, 1); });
-bladn2.addEventListener("mouseout", function(e) { changeScaleAndOpacit2(bladn2, bladScale1, blommbildn2, 1, blommbildn2n2, 0, 1); });
-bladn3.addEventListener("mouseout", function(e) { changeScaleAndOpacit2(bladn3, bladScale1, blommbildn3, 1, blommbildn3n2, 0, 1); });
-bladn4.addEventListener("mouseout", function(e) { changeScaleAndOpacit2(bladn4, bladScale1, blommbildn4, 1, blommbildn4n2, 0, 1); });
-bladn5.addEventListener("mouseout", function(e) { changeScaleAndOpacit2(bladn5, bladScale1, blommbildn5, 1, blommbildn5n2, 0, 1); });
+bladn2.addEventListener("mouseout", function(e) { changeScaleAndOpacit2(bladn2, bladScale1, blommbildn2, 1, blommbildn2n2, 0, 2); });
+bladn3.addEventListener("mouseout", function(e) { changeScaleAndOpacit2(bladn3, bladScale1, blommbildn3, 1, blommbildn3n2, 0, 3); });
+bladn4.addEventListener("mouseout", function(e) { changeScaleAndOpacit2(bladn4, bladScale1, blommbildn4, 1, blommbildn4n2, 0, 3); });
+bladn5.addEventListener("mouseout", function(e) { changeScaleAndOpacit2(bladn5, bladScale1, blommbildn5, 1, blommbildn5n2, 0, 2); });

@@ -1,10 +1,15 @@
 .blad {
   position: absolute;
   left: 50%;
-  top: 10rem;
-  width: 7rem;
-  height: 7rem;
+  top: 58%;
+  width: 9rem;
+  height: 9rem;
   transform-origin: 0% 0%;
+}
+
+#blommbildn1n3{
+  bottom: 5%;
+  right: 5%;
 }
 
 .blommbilder {
@@ -29,27 +34,31 @@
 
 #bladn2 {
   transform: rotate(297deg);
+  z-index: 2;
 }
 
 #bladn3 {
   transform: rotate(369deg);
+  z-index: 3;
 }
 
 #bladn4 {
   transform: rotate(441deg);
+  z-index: 3;
 }
 
 #bladn5 {
   transform: rotate(513deg);
+  z-index: 2;
 }
 
 
 #blommasmitt {
   position: absolute;
-  width: 5rem;
-  height: 5rem;
-  left: calc(50% - 2.5rem);
-  top: calc(10rem - 2.5rem);
+  width: 9rem;
+  height: 9rem;
+  left: calc(50% - 4.5rem);
+  top: calc(58% - 4.5rem);
   z-index: 5;
 }
 
@@ -84,16 +93,18 @@ body {
 }
 
 #flower {
-  position: relative;
 }
 
-@media only screen and (max-width: 500px) {
-  .blad {
-    top: 16rem;
-  }
+#stamm {
+  position: absolute;
+  left: calc(50% - 0.5rem);
+  height: 44%;
+  top: 55%;
+  z-index: -6;
+}
 
-  #blommasmitt {
-    top: calc(16rem - 2.5rem);
-  }
-
+#stammsta {
+  object-fit: cover;
+  width: 1rem;
+  height: 100%;
 }

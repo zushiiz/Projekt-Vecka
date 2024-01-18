@@ -1,7 +1,23 @@
+
+@media only screen and (width < 1300px ){
+
+  .figure{
+    display: none;
+  }
+}
+
 body{
-  background-color: gray;
+  background-color: #e6f3ff;
   margin: 0;
   padding: 0;
+  font-family: text-font,'Times New Roman', Times, serif;
+  font-size: 30px;
+  color: #526d37;
+}
+
+@font-face {
+  font-family: text-font;
+  src: url(assets/typo-grotesk-font/TypoGroteskBold-2Kxl.ttf);
 }
 
 nav{
@@ -17,28 +33,43 @@ nav{
 
 .logo-box{
   background-color: white;
-  height: 15rem;
-  width: 15rem;
+  height: 10rem;
+  width: 10rem; 
   border-radius: 100000px;
   border: solid black;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 .logo{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
-#figure{
+.figure{
   position: absolute;
   bottom: 0;
   right: 0;
+  margin-right: 5rem;
+  margin-bottom: 3rem;
+}
+
+.category-title{
+  margin-left: 100px;
 }
 
 .logo-box:hover{
   cursor: pointer;
   scale: 1.1;
   transition:0.2s ease-in-out;
+}
+
+.group-name{
+  margin-top: 0.5em;
+  padding: 0;
 }
 
 #background {
@@ -52,98 +83,90 @@ nav{
 
 #treatment1{
   position: absolute;
-  top: ;
-  left: ;
+  top: 20vh;
+  left: 28vw;
 }
 
 #treatment2{
   position: absolute;
-  top: ;
-  left: ;
+  top: 37vh;
+  left: 43vw;
 }
 
 #law{
   position: absolute;
-  top: ;
-  left: ;
+  top: 27vh;
+  left: 59vw;
 }
 
 #culture{
   position: absolute;
-  top: ;
-  left: ;
+  top: 27vh;
+  left: 33vw;
 }
 
 #religion{
   position: absolute;
-  top: 20em;
-  left: ;
-}
-
-#extras-logo{
-  margin-top: 0.5em;
-}
-
-#extras-logo2{
-  margin-top: 1em;
+  top: 30vh;
+  left: 51vw;
 }
 
 #fakenews{
   position: absolute;
-  top: ;
-  left: ;
+  top: 20vh;
+  left: 28vw;
 }
 
 #censor{
   position: absolute;
-  top: ;
-  left: ;
+  top: 37vh;
+  left: 43vw;
 }
 
 #politics{
   position: absolute;
-  top:20rem;
-  left:;
+  top: 27vh;
+  left: 60vw;
 }
 
 #stateprotec{
   position: absolute;
-  top: ;
-  left: ;
+  top: 20vh;
+  left: 28vw;
 }
 
 #economy{
   position: absolute;
-  top: ;
-  left: ;
+  top: 37vh;
+  left: 43vw;
 }
 
 #education{
   position: absolute;
-  top: ;
-  left: ;
+  top: 27vh;
+  left: 60vw;
 }
 
 #workcondition{
   position: absolute;
-  top: ;
-  left: ;
+  top: 25vh;
+  left: 27vw;
 }
 
 #workcondition2{
   position: absolute;
-  top: ;
-  left: ;
+  top: 43vh;
+  left: 46vw;
 }
 
 #slavery{
   position: absolute;
-  top: 20em;
-  left: ;
+  top: 20vh;
+  left: 65vw;
 }
 
 #workrights{
   position: absolute;
-  top: ;
-  left: ;
+  top: 6vh;
+  left: 43vw;
 }
