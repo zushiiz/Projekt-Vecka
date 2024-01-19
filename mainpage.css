@@ -178,3 +178,12 @@ body {
   z-index: 20;
   font-size: 17px;
 }
+
+
+#sol { 
+  position: absolute; 
+  width: 8rem; 
+  right: 6%; 
+  top: 5%; 
+  z-index: -9; 
+}
